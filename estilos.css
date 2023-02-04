@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,200;0,400;1,600 & display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,19 +10,19 @@
 html{
     scroll-behavior: smooth;
 }
+
 #inicio{
-    background: linear-gradient(rgba(0,0,0,7),rgba(0, 0,0,7))url();
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("/imagenes/10502Agua.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
 }
-#inicio{
-   background-color: rgba(0,0,0,.2);
+#inicio .contenido header{
+   background-color: rgba(0,0,0,.8);
    position: fixed;
-    width: 100%;
-
-    z-index: 100;
-    top: 0;
+   width: 100%;
+   z-index: 100;
+   top: 0;
 
 }
 #inicio .contenido header .contenido-header{
@@ -34,12 +35,12 @@ html{
 
 }
 
-#inicio .contenido header .contenido-header h1 {
+#inicio .contenido header .contenido-header h1{
     text-align: center;
     color: #ff5080;
 
 }
-#inicio .contenido header .contenido-header nav ul {
+#inicio .contenido header .contenido-header nav ul{
     list-style: none;
     display: flex;
     align-items: center;
@@ -50,11 +51,11 @@ html{
      color: #fff;
      margin: 0 12px;
      font-weight: 400;
-     transition: 5s;
+     transition: .5s;
 
 }
 
-#inicio .contenido header .contenido-header nav ul li a:hover{
+#inicio .contenido header .contenido-header nav ul a:hover{
     color: #ff5080;
 
 }
@@ -64,7 +65,7 @@ html{
     color: #fff;
     display: inline-block;
     margin-left: 10px;
-    transition: 5px;
+    transition: .5s;
 
 }
 #inicio .contenido header .contenido-header .redes a:hover{
@@ -115,6 +116,12 @@ html{
     margin: 25px;
     padding: 20px 25px;
     border: 2px solid #fff;
+    border-radius: 50px;
+    color: #d0ff00;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+
 }
 #inicio .contenido .presentacion a:hover{
     background-color: #ff5080;
@@ -129,15 +136,19 @@ html{
     max-width: 1100px;
     margin: auto;
     padding: 100px 15px;
-    color: #111135;
+    color: #000000;
     display: flex;
 }
 #sobremi .contenedor-foto{
-    max-width: 20px;
-    width: 100px;
+    max-width: 400px;
+    margin-right: 80px;
+   
+}
+#sobremi .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
     border-radius: 20px;
     background-color: #f3f3f3;
-
 }
 #sobremi .sobremi{
     margin: 0 40px;
@@ -175,13 +186,14 @@ html{
     color: #565656;
     margin-bottom: 12px;
 }
-#sobremi .sobremi.a{
+#sobremi .sobremi a {
     display: inline-block;
     text-decoration: none;
-    border-radius: 30px;
-    padding: 10px 20px;
     color: #000;
+    border-radius: 30px;
+
     border: 1px solid #000;
+    padding: 10px 20px;
     margin-top: 30px;
     transition: .5s;
 
@@ -189,6 +201,7 @@ html{
 
 #sobremi .sobremi a:hover{
     background-color: #ff5080;
+    color: #fff;
 }
 
 /* SECCION SERVICIO */
@@ -236,7 +249,7 @@ html{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: #d3d3d3;
+    background-color: #5c1e1e;
     padding: 20px;
     margin-bottom: 25px;
 
@@ -263,7 +276,7 @@ html{
 }
 /*seccion de habilidades */
 .contenedor-skills{
-    background: linear-gradient(#eb5a5acc, rgba(33,16,16,.8)url(/imagenes/bn-2-Jpeg.jpg));
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)),url("/imagenes/03.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -271,15 +284,15 @@ html{
     padding: 100px 0;
     text-align: center;
 }
-.contenedor-skills .skill{
+.contenedor-skills .skill {
     max-width: 600px;
     margin: 30px auto;
 }
-.contenedor-skills .skill .info{
+.contenedor-skills .skill .info {
     display: flex;
     justify-content: space-between;
 }
-.contenedor-skills .skill .lista{
+.contenedor-skills .skill .lista {
     display: inline-block;
     margin-right: 20px;
     height: 10px;
@@ -400,15 +413,15 @@ html{
 #portafolio .fila .proyecto .info{
     position: absolute;
     left: 0;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0,0,0,.8);
     color: #ff5000 ;
     width:100%;
     padding: 10px;
     opacity: 0;
-    bottom: -48px;
+    bottom: -40px;
     transition: .5s;
 }
-#portafolio .fila .proyecto:hover{
+#portafolio .fila .proyecto:hover .info{
     opacity: 1;
     bottom: 0;
 }
@@ -465,6 +478,7 @@ html{
     background-color: #ff5000;
     color: #fff;
 }
+/* footer*/
 footer{
     background-color: #000;
     color: #fff;
@@ -481,8 +495,6 @@ footer a{
 }
 
 
-
-
 /* Seccion responcive*/
 @media screen and  (max-width:800px)
 {
@@ -494,7 +506,7 @@ footer a{
     }
     nav.responsive{
         display: block;
-        background-color: rgba(0, 0, 0, .8);
+        background-color: rgba(0,0,0,.8);
         width: 100%;
         position: absolute;
         top:48px;
@@ -536,10 +548,10 @@ footer a{
         padding: 50px 15px;
 
     }
-    .servicio .fila{
+    #servicios .fila{
         display: block;
     }
-    .servicio .fila .servicio{
+    #servicios .fila .servicio{
         margin: 10px auto;
     }
     #contenedor-skills{

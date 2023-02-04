@@ -1,4 +1,5 @@
 /*funcion que aplica a la opcion seleccionado  */
+
 function seleccionar(link){
     var opciones = document.querySelectorAll('#links a');
     opciones[0].className="";
@@ -15,7 +16,7 @@ function seleccionar(link){
 
 }
 /* funcion que muestra el menu responsive*/
-function responsive(){
+function responsiveMenu(){
     var x =document.getElementById("nav")
     if(x.className ===""){
         x.className = "responsive";
@@ -30,7 +31,7 @@ window.onscroll =function(){
 //funcion que aplica la animacion de la barra de habilidades
 function efectoHabilidades(){
     var skills= document.getElementById("skills")
-    var distancia_skills = window.innerHeight - skills.getBoundingClientRect(),top;
+    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
     if(distancia_skills >= 300){
         document.getElementById("html").classList.add("barra-progreso1")
         document.getElementById("js").classList.add("barra-progreso2")

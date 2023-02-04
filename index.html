@@ -15,27 +15,29 @@
     <section id="inicio">
         <div class="contenido">
             <header>
-                <h1>OCR CV </h1>
-                <nav id="nav" class="">
-                    <ul id="links">
-                        <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio </a></li>
-                        <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mí </a></li>
-                        <li><a href="#servicios " onclick="seleccionar(this)">Proyectos </a></li>
-                        <li><a href="#portafolio" onclick="seleccionar(this)"> Portafolio </a></li>
-                        <li><a href="#contacto" onclick="seleccionar(this)"> Contacto </a></li>
-                    </ul>
-                </nav>
-                <!-- iconos del menu responcive -->
-                <div id="icono_nav" onclick="responsiveMenu()">
-                    <i class="fa-solid fa-bars"></i>
+                <div class="contenido-header">
+                    <h1>OCR CV </h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">Inicio </a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre Mí </a></li>
+                            <li><a href="#servicios " onclick="seleccionar(this)">Proyectos </a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)"> Portafolio </a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)"> Contacto </a></li>
+                        </ul>
+                    </nav>
+                
+                    <!-- iconos del menu responcive -->
+                    <div id="icono_nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- iconos de las redes sociales -->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                    </div>
                 </div>
-                <!-- iconos de las redes sociales -->
-                <div class="redes">
-                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
-                </div>
-
             </header>
             <div class="presentacion">
                 <p class="bienvenido">Bienvenidos</p>
@@ -55,20 +57,19 @@
 
     <!-- seccion sobre mi-->
     <section id="sobremi">
-        <div class="contenido-foto">
-            <img src="/imagenes/03.jpg" alt="Oscar">
+        <div class="contenedor-foto">
+            <img src="/imagenes/IMG_202Oscar5.jpg" alt="Oscar">
 
         </div>
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mí</p>
-            <h2>Hola soy <span>Oscar Cervantes Rosales</span></h2>
+            <h2>Hola, soy <span>Oscar Cervantes Rosales</span></h2>
             <h3>Desarrolador Web</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Provident, eum vel, architecto 
                 quaerat quo aspernatur deleniti saepe repellendus officia quia repellat explicabo doloribus ullam nostrum vitae mollitia sit iusto est!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <a href="#">Descarga CV </a>
-
         </div>
     </section>
 
@@ -82,8 +83,8 @@
                 <hr>
                 <ul class="servicio-tag">
                     <li>Web</li>
-                    <li>Graphic </li>
-                    <li>Seo</li>
+                    <li>Diseño </li>
+                    <li>Desarrollador</li>
 
                 </ul>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus 
@@ -98,8 +99,8 @@
                 <hr>
                 <ul class="servicio-tag">
                     <li>Web</li>
-                    <li>Graphic </li>
-                    <li>Seo</li>
+                    <li>Diseño </li>
+                    <li>Desarrollador</li>
 
                 </ul>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus 
@@ -116,9 +117,8 @@
                 <hr>
                 <ul class="servicio-tag">
                     <li>Web</li>
-                    <li>Graphic </li>
-                    <li>Seo</li>
-
+                    <li>Diseño </li>
+                    <li>Desarrollador</li>
                 </ul>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus 
                     itaque impedit vero eveniet voluptatem labore 
@@ -132,9 +132,8 @@
                 <hr>
                 <ul class="servicio-tag">
                     <li>Web</li>
-                    <li>Graphic </li>
-                    <li>Seo</li>
-
+                    <li>Diseño </li>
+                    <li>Desarrollador</li>
                 </ul>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus 
                     itaque impedit vero eveniet voluptatem labore 
@@ -145,17 +144,18 @@
         </div>
     </section>
     <!-- seccion habilidades-->
-    <div class="contenedor-skill" id="skills">
-        <h3>habilidades--</h3>
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
         <div class="skill">
             <div class="info">
-                <p><span class="lista"></span> HTML Y CSS </p>
+                <p><span class="lista"></span> HTML & CSS </p>
                 <span class="porcentaje">95%</span>
             </div>
             <div class="barra">
                 <div id="html" class="barra-progreso1"></div>   
             </div>
         </div>
+
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span> JavaScript </p>
@@ -164,7 +164,8 @@
             <div class="barra">
                 <div id="js" class="barra-progreso2"></div>   
             </div>
-        </div>        <div class="skill">
+        </div>        
+        <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>Base de Datos</p>
                 <span class="porcentaje">90%</span>
@@ -181,16 +182,15 @@
             <div class="barra">
                 <div id="pytho" class="barra-progreso4"></div>   
             </div>
-        </div>
-        
+        </div>    
     </div>
     <!-- seccion portafolio-->
-    <section id="idportafolio">
+    <section id="portafolio">
         <h3 class="titulo-seccion">MIS PROYECTOS </h3>
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="/imagenes/MUEBLE_CENTRAL_CALZADO.png" alt="">
+                <img src="/imagenes/AutoCAD Cursos 2d fundamentos.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del Proyecto </h4>
                     <p>Diseño Web</p>
@@ -198,25 +198,7 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="/imagenes/MUEBLE_CENTRAL_CALZADO.png" alt="">
-                <div class="info">
-                    <h4>Descripción del Proyecto </h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="/imagenes/MUEBLE_CENTRAL_CALZADO.png" alt="">
-                <div class="info">
-                    <h4>Descripción del Proyecto </h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="/imagenes/MUEBLE_CENTRAL_CALZADO.png" alt="">
+                <img src="/imagenes/wallpaper-3d_abstract_white-HD.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del Proyecto </h4>
                     <p>Diseño Web</p>
@@ -226,7 +208,7 @@
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="/imagenes/MUEBLE_CENTRAL_CALZADO.png" alt="">
+                <img src="/imagenes/Dreamy_World1.jpg" alt="">
                 <div class="info">
                     <h4>Descripción del Proyecto </h4>
                     <p>Diseño Web</p>
@@ -234,7 +216,25 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="/imagenes/MUEBLE_CENTRAL_CALZADO.png" alt="">
+                <img src="/imagenes/3dsmaxfeat.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto </h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/imagenes/C52.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto </h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="/imagenes/1B3 (1).jpg" alt="">
                 <div class="info">
                     <h4>Descripción del Proyecto </h4>
                     <p>Diseño Web</p>
@@ -246,7 +246,7 @@
     <!-- seccion contacto-->
 
     <section id="contacto">
-        <h3 class="titulo-seccion"> Contacto ahora</h3>
+        <h3 class="titulo-seccion"> Contactanos ahora</h3>
         <div class="contenedor-form">
             <form action="">
                 <div class="fila-mitad">
@@ -274,6 +274,7 @@
         </div>
 
     </footer>
+    
     <script src="/script.js"></script>
 </body>
 </html>
