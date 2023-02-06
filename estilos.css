@@ -7,6 +7,11 @@
     font-family: 'Montserrat';
 }
 
+.descripcion {
+    font-weight: bolder;
+    color: #000000;
+}
+
 html{
     scroll-behavior: smooth;
 }
