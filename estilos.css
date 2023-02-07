@@ -84,7 +84,7 @@ html{
 
 #inicio .contenido .presentacion{
     max-width: 1100px;
-    height:  104vh;
+    height:  100vh;
     margin: auto;
     columns: #fff;
     display: flex;
