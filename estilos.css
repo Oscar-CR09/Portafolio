@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Montserrat:ital,wght@0,200;0,400;1,600 & display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -18,13 +19,13 @@ html{
 }
 
 #inicio{
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url("/imagenes/10502Agua.jpg");
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url("/imagenes/10502Agua.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
 }
 #inicio .contenido header{
-   background-color: rgba(0,0,0,.8);
+   background-color: rgba(0,0,0,.7);
    position: fixed;
    width: 100%;
    z-index: 100;
@@ -94,10 +95,11 @@ html{
 }
 #inicio .contenido .presentacion .bienvenido{
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 36px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    color: #fff;
 
 }
 #inicio .contenido .presentacion h2{
@@ -107,13 +109,13 @@ html{
 
 }
 #inicio .contenido .presentacion h2 span{
-    font-size: 25px;
-    color: #ff5080;
+    font-size: 65px;
+    color: #fbff1e;
 }
 #inicio .contenido .presentacion .descripcion{
     max-width: 700px;
     margin: 25px auto;
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
     
 }
@@ -134,7 +136,7 @@ html{
     background-color: #ff5080;
 }
 #icono-nav{
-    color: #fff;
+    color: #c8ff03;
     display: none;
 
 }
@@ -177,8 +179,8 @@ html{
     
 }
 #sobremi .sobremi h2 span{
-    color: #ff5080;
-   
+    color: #01f021;
+    font-size: 62px;
 }
 #sobremi .sobremi h3{
     font-size: 18px;
